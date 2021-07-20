@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width">
+
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+</style>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+</style>
+
+  </head>
+  <body style="margin: 0;">
+    <script src="script.js"></script>
+
+    <nav class="navBar"> 
+      <div class="navCenter">
+        <!-- <container style="display:flex; justify-content:flex-start;"> -->
+            <a href = "index.html" style= "text-decoration: none;">
+              <img src="logo.png" class="logo">
+              <span class="logoText" style="margin-top: 10px;"> T.E.A </span>
+            </a>
+        </container>
+        <container class="linkFlex">
+          <!-- <container style="display:flex; justify-content:flex-start;">
+            <img src="th.jfif" class="logo">
+          </container> -->
+          <container>
+            <a class="navLink" href="#about">about us</a>
+            <a class="navLink" href="#ourMission">our mission</a>
+            <a class="navLink" href="#events">events</a>
+            <a class="navLink" href="about.html">contact</a>
+            <a class="navLink" href="about.html">newsletter</a>
+          </container>
+        </container>
+      </div>
+    </nav>
+    <div class = "sectionDiv" style = "background-color: #F8A84E;">
+      <h6 class="title"> tamil eelam <span style= "color:#43B02A;"> awareness</span></h6>
+      <p class="intro"> Dedicated to awareness and rehabilitation of Sri Lankan Civil War victims of Tamil Eelam</p>
+      <button style="margin-left: 36%;">events</button>
+      <button>sri lankan history</button>
+    </div>
+
+    <div id = "about" class = "sectionDiv" style = "background-color: #9B2743;"> 
+      <div class = "navCenter">
+        <div style = "display: flex; justify-content: space-evenly, center;">
+          <h6 class="aboutTitle"> a bit about us </h6>
+          <p style = "color: white; margin-top: 16%; text-align: center; font-family: 'Kumbh Sans', sans-serif; width: 50%; font-size: 24px;"> We are a group of high school students who are passionate about supporting Tamils affected by the Sri Lankan Civil War. Based in Washington State, we do our part to spread the news about Sri Lankan Tamils in our community. </p>
+        </div>
+      </div>
+    </div>
+
+    <div id="ourMission" class = "sectionDiv" style="background-color: #FFD100">
+      <div class="navCenter">
+        <div style = "display: flex; justify-content: space-evenly, center;">
+          <div>
+            <p style = "color: #9B2743; margin-top: 0%; padding-top: 10%; text-align: center; font-family: 'Kumbh Sans', sans-serif; width: 50%; font-size: 30px;">At Tamil Eelam Awareness, we aim to:</p>
+            <ul style = "color: #9B2743; margin-top: 0%; padding-top: 15px; text-align: left; font-family: 'Kumbh Sans', sans-serif; width: 50%; font-size: 25px;">
+              <li>communicate the effects of the SL civil war to the public</li>
+              <li>create and fundraise for projects that aid Tamils affected by the civil war</li>
+              <li>encourage remembrance of the thousands of Tamil lives lost</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h6 class="missionTitle"> mission statement </h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="events" class = "sectionDiv" style="background-color:#43B02A; height: 500px;">
+      <div class="navCenter">
+        <h6 class="eventsTitle" style = "padding-top: 5%;"> events </h6>
+
+       <style>
+      * {
+        box-sizing: border-box
+      }
+      /* body {
+        font-family: Verdana, sans-serif;
+        margin: 0
+      } */
+      .mySlides {
+        display: none;
+        margin-top: 0px;
+      }
+      /* img {
+        vertical-align: middle;
+      } */
+      .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+      }
+      /* Next & previous buttons */
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      /* Position the "next button" to the right */
+      .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover,
+      .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+      }
+      /* Caption text */
+      .text {
+        color: #ffffff;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+      }
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #ffffff;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #999999;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      .active,
+      .dot:hover {
+        background-color: #111111;
+      }
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1.5s;
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      @-webkit-keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      @keyframes fade {
+        from {
+          opacity: .4
+        }
+        to {
+          opacity: 1
+        }
+      }
+      /* On smaller screens, decrease text size */
+      @media only screen and (max-width: 300px) {
+        .prev,
+        .next,
+        .text {
+          font-size: 11px
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="bakesale.JPG" class="carouselImage">
+        <div class="text">Bake Sale</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <img src="/uploads/media/default/0001/03/b7d624354d5fa22e38b0ab1f9b905fb08ccc6a05.jpeg" style="height: 300px; width:auto">
+        <div class="text">Sunset in Romania</div>
+      </div>
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <img src="/uploads/media/default/0001/03/5bfad15a7fd24d448a48605baf52655a5bbe5a71.jpeg" style="width:100%">
+        <div class="text">New York, USA</div>
+      </div>
+      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <script>
+      var slideIndex = 0;
+      showSlides();
+      function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        for(i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if(slideIndex > slides.length) {
+          slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 100000); // Change image every 2 seconds
+      }
+    </script>
+      </div>
+
+    </div>
+  </body>
+</html>
